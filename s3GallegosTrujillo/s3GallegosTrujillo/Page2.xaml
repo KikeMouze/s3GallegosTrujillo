@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="s3GallegosTrujillo.Page2">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <!--implicitos targetType-->
+            <Style x:Key="labelStyle" TargetType="Label">
+                <Setter Property = "TextColor" Value="Fuchsia" />
+                <Setter Property = "FontSize"  Value="20" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    
+    <ContentPage.Content>
+        <StackLayout Style="{StaticResource stackLayoutStyle}">
+            <Label Text="Semana 3 " FontSize="18" />
+            <Label x:Name="lblDatoUno"  Style="{StaticResource labelStyle}"></Label>
+            <Label x:Name="lblDatoDos"  Style="{StaticResource labelStyle}" ></Label>
+            <Button x:Name="btnAbrir" Clicked="btnAbrir_Clicked"></Button>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

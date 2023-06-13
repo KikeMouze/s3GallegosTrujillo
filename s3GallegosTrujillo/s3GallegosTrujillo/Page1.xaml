@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="s3GallegosTrujillo.Page1">
+    <ContentPage.Content>
+        
+        <!--Aqui se convoca la variable goblal-->
+        <StackLayout Style="{StaticResource stackLayoutStyle}">
+            <Label Text="SEMANA 3" FontSize="18" HorizontalTextAlignment="Center"/>
+            
+            <Entry x:Name="txtDatoUno" Placeholder="Dato Uno"></Entry>
+            <Entry x:Name="txtDatoDos" Placeholder="Dato Dos" Keyboard="Numeric"></Entry>
+            <Button x:Name="btnAbrir" Text="Abrir"  Clicked="btnAbrir_Clicked"></Button>
+        
+        
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
